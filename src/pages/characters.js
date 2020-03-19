@@ -1,14 +1,12 @@
 import React from 'react'
-import SEO from "../components/seo"
-import Header from '../components/header'
+import Layout from "../components/layout"
 
 const Characters = () => {
     return (
-        <div>
-            <Header />
-            <h1>Star Wars Characters</h1>
+        <Layout>
+            <h1>Characters</h1>
             <p>Favorite Characters</p>
-        </div>
+        </Layout>
     )
 }
 

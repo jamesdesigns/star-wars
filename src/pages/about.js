@@ -1,13 +1,13 @@
 import React from 'react'
-import Header from '../components/header'
+import Layout from "../components/layout"
+
 
 const About = () => {
     return (
-        <div>
-            <Header />
-            <h1>About Star Wars</h1>
+        <Layout>
+            <h1>About</h1>
             <p>This is going to be information about this website.</p>
-        </div>
+        </Layout>
     )
 }
 
