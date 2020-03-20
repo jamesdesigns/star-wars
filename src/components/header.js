@@ -16,19 +16,26 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-        <Link to="/characters">Characters </Link>
-        <Link to="/blog">Blog </Link>
-        <Link to="/about">About</Link>
+      <nav>
+        <ul>
+          <li>
+          <h1 style={{ margin: 0 }}>
+            <Link
+              to="/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              {siteTitle}
+              </h1>
+            </Link>
+            </li>
+            <li><Link to="/characters">Characters </Link></li>
+            <li><Link to="/blog">Blog </Link></li>
+            <li><Link to="/about">About</Link></li>
+          </ul>
+        </nav>
       </h1>
     </div>
   </header>
