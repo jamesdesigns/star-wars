@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
               <Link
                 to="/"
                 style={{
-                  color: `white`,
+                  color: `#606060`,
                   textDecoration: `none`
                 }}
               >
@@ -31,19 +31,19 @@ const Header = ({ siteTitle }) => (
           <li><Link 
           to="/characters"
           style={{
-            color: `white`,
+            color: `#606060`,
             textDecoration: `none`
           }}>Characters</Link></li>
           <li><Link 
           to="/blog"
           style={{
-            color: `white`,
+            color: `#606060`,
             textDecoration: `none`
           }}>Blog</Link></li>
           <li><Link 
           to="/about"
           style={{
-            color: `white`,
+            color: `#606060`,
             textDecoration: `none`
           }}>About</Link></li>
           </ul>

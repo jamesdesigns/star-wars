@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <footer 
         style={{
           textAlign: 'center',
-          color: 'white'
+          color: '#606060'
         }}>
           <small>© {new Date().getFullYear()} Created by James Hooper</small>
           {` `}
