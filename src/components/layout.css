@@ -21,6 +21,7 @@ nav,
 section,
 summary {
   display: block;
+  font-family: Arial, Helvetica, sans-serif;
 }
 audio,
 canvas,
@@ -615,6 +616,20 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li:active {
+  color: white;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
