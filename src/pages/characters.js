@@ -11,13 +11,6 @@ class Characters extends React.Component{
         };
     }
 
-
-        // state = {
-        //     loading: true,
-        //     error: false,
-        //     fetchedData: []
-        // }
-
         componentDidMount() {
             fetch('https://swapi.co/api/people')
             .then(response => {
@@ -30,9 +23,6 @@ class Characters extends React.Component{
                 })
             })
         };
-
-
-        // const Characters = () => {
 
         render() {
             const { fetchedData } = this.state;
@@ -50,11 +40,6 @@ class Characters extends React.Component{
                     }}>
                 {fetchedData.map(character => <p key={character.name}>{character.name}</p>)}
                 </div>
-                
-                    <div
-                    style={{
-                        color: 'white'
-                    }}>+++++</div>
                 </Layout>
             )
         }
