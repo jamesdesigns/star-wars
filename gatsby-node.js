@@ -15,15 +15,17 @@ exports.createPages = async ({ actions, graphql }) => {
         id
         name
         gender
+        species
       }
     }
   }
   `)
 
-  data.swapi.allPeople.forEach(({ id, name, gender }) => {
+  data.swapi.allPeople.forEach(({ id, name, gender, species }) => {
     actions.createPage({
       path: name,
       path: gender,
+      path: species,
       component: path.resolve(`./src/components/characters.js`),
       context: {
         speciesId: id,

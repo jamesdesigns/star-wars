@@ -38,7 +38,8 @@ class Characters extends React.Component{
                     style={{
                         color: 'white'
                     }}>
-                {fetchedData.map(character => <p key={character.name}>{character.name}</p>)}
+                {fetchedData.map(character => <p key={character.name}>{character.name} | {character.gender}</p>)}
+
                 </div>
                 </Layout>
             )
