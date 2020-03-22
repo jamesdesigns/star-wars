@@ -12,7 +12,6 @@ const IndexPage = () => (
         <Image />
       </div>
     </Layout>
-
 )
 
 export default IndexPage
