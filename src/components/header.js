@@ -23,6 +23,7 @@ const Header = ({ siteTitle }) => (
           <li><Link
           to="/"
           className={headerStyles.navItem}
+          activeClassName={headerStyles.activeNavItem}
           >
           {siteTitle}
           </Link>
@@ -30,14 +31,17 @@ const Header = ({ siteTitle }) => (
           <li><Link 
           to="/characters"
           className={headerStyles.navItem}
+          activeClassName={headerStyles.activeNavItem}
           >Characters</Link></li>
           <li><Link 
           to="/planets"
           className={headerStyles.navItem}
+          activeClassName={headerStyles.activeNavItem}
          >Planets</Link></li>
           <li><Link 
           to="/about"
           className={headerStyles.navItem}
+          activeClassName={headerStyles.activeNavItem}
           >About</Link></li>
           </ul>
         </nav>
