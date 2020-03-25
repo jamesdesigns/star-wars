@@ -6,6 +6,7 @@ import headerStyles from './header.module.scss'
 
 const Header = ({ siteTitle }) => (
   <header
+    className={headerStyles.header}
     style={{
       background: `black`,
       marginBottom: `1.45rem`
@@ -18,26 +19,25 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <nav>
-        <ul>
-          <li>
-              <Link
-                to="/"
-                className={headerStyles.link}
-                >
-                {siteTitle}
-              </Link>
+        <ul className={headerStyles.navList}>
+          <li><Link
+          to="/"
+          className={headerStyles.navItem}
+          >
+          {siteTitle}
+          </Link>
           </li>
           <li><Link 
           to="/characters"
-          className={headerStyles.link}
+          className={headerStyles.navItem}
           >Characters</Link></li>
           <li><Link 
           to="/planets"
-          className={headerStyles.link}
+          className={headerStyles.navItem}
          >Planets</Link></li>
           <li><Link 
           to="/about"
-          className={headerStyles.link}
+          className={headerStyles.navItem}
           >About</Link></li>
           </ul>
         </nav>

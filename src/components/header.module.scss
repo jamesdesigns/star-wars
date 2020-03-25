@@ -1,4 +1,18 @@
-.link {
+.header {
+    padding: 1rem 0 3rem;
+    background-color: black;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-item {
  color: #606060;
  text-decoration: none;
+ font-size: .9rem;
+ margin-right: 1.3rem;
 }
+
