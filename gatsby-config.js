@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Star Wars`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Clearlinks History with Star Wars and the teams that make up the performance`,
+    author: `James Hooper`,
   },
   plugins: [
     `gatsby-plugin-sass`,
