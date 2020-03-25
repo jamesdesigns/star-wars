@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import './header.scss'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -20,32 +21,23 @@ const Header = ({ siteTitle }) => (
           <li>
               <Link
                 to="/"
-                style={{
-                  color: `#606060`,
-                  textDecoration: `none`
-                }}
-              >
+                className="link"
+                >
                 {siteTitle}
               </Link>
           </li>
           <li><Link 
           to="/characters"
-          style={{
-            color: `#606060`,
-            textDecoration: `none`
-          }}>Characters</Link></li>
+          className="link"
+          >Characters</Link></li>
           <li><Link 
           to="/planets"
-          style={{
-            color: `#606060`,
-            textDecoration: `none`
-          }}>Planets</Link></li>
+          className="link"
+         >Planets</Link></li>
           <li><Link 
           to="/about"
-          style={{
-            color: `#606060`,
-            textDecoration: `none`
-          }}>About</Link></li>
+          className="link"
+          >About</Link></li>
           </ul>
         </nav>
     </div>
