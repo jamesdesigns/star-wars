@@ -19,6 +19,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
@@ -36,7 +37,7 @@ const Layout = ({ children }) => {
           textAlign: 'center',
           color: '#606060'
         }}>
-          <small>© {new Date().getFullYear()} Created by James Hooper</small>
+          <small>© {new Date().getFullYear()} Created by {data.site.siteMetadata.author}</small>
           {` `}
         </footer>
     </div>
