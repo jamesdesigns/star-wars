@@ -9,7 +9,10 @@ const About = () => {
             style={{
                 color: 'white'
             }}>About</h1>
-            <p>This is going to be information about this website.</p>
+            <p
+            style={{
+                color: '#c0c0c0'
+            }}>This is going to be information about this website.</p>
         </Layout>
     )
 }
