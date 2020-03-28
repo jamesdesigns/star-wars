@@ -24,6 +24,32 @@ module.exports.onCreateNode = ({ node, actions }) => {
 // const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql }) => {
+  const { createPage } = actions
+  const planetTemplate = path.resolve('./src/templates/planets.js')
+  const res = await graphql(`
+  query {
+      allMarkdownRemark {
+          edges {
+              node {
+                  fields {
+                      slug
+                  }
+              }
+          }
+      }
+  } 
+  `)
+
+  res.data.allMarkdownRemark.edges.forEach((edge) => {
+    createPage({
+      component: planetTemplate,
+      path: `/planets/${edge.node.fields.slug}`,
+      coontext: {
+        slug: edge.node.fields.slug
+      }
+    })
+  })
+
   // const { data } = await graphql(`
   // query {
   //   allPeople {
