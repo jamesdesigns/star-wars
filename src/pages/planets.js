@@ -18,7 +18,6 @@ const Planets = () => {
         }
     `)
 
-    console.log(data)
 
     return (
         <Layout>
