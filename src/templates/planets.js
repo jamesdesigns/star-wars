@@ -20,7 +20,6 @@ const Planet = (props) => {
             <h1>{props.data.markdownRemark.frontmatter.title}</h1>
             <p>{props.data.markdownRemark.frontmatter.date}</p>
             <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html }}></div>
-            {/* <h1 style={{ color: 'white' }}>This is the planet template.</h1> */}
         </Layout>
     )
 }
