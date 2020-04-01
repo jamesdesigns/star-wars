@@ -11,7 +11,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === 'MarkdownRemark') {
-    const slug = path.basename(node.fileAbsolutePath)
+    const slug = path.basename(node.fileAbsolutePath, '.md')
 
     createNodeField({
         node,
@@ -21,9 +21,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-// const path = require(`path`)
-
-exports.createPages = async ({ actions, graphql }) => {
+module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const planetTemplate = path.resolve('./src/templates/planets.js')
   const res = await graphql(`
@@ -38,40 +36,16 @@ exports.createPages = async ({ actions, graphql }) => {
           }
       }
   } 
-  `)
+`)
 
   res.data.allMarkdownRemark.edges.forEach((edge) => {
     createPage({
       component: planetTemplate,
       path: `/planets/${edge.node.fields.slug}`,
-      coontext: {
+      context: {
         slug: edge.node.fields.slug
       }
     })
   })
 
-  // const { data } = await graphql(`
-  // query {
-  //   allPeople {
-  //     people {
-  //       id
-  //       name
-  //       gender
-  //       species
-  //     }
-  //   }
-  // }
-  // `)
-
-  // data.swapi.allPeople.forEach(({ id, name, gender, species }) => {
-  //   actions.createPage({
-  //     path: name,
-  //     path: gender,
-  //     path: species,
-  //     component: path.resolve(`./src/components/characters.js`),
-  //     context: {
-  //       speciesId: id,
-  //     },
-  //   })
-  // })
 }

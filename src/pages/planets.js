@@ -13,9 +13,7 @@ const Planets = () => {
                             date
                         }
                         fields {
-                            slug {
-                                id
-                            }
+                            slug 
                         }
                     }
                 }
