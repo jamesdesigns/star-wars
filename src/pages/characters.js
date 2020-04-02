@@ -12,7 +12,7 @@ class Characters extends React.Component{
     }
 
         componentDidMount() {
-            fetch('https://swapi.co/api/people')
+            fetch('https://swapi.co/api/people/')
             .then(response => {
                 return response.json()
             })
@@ -42,7 +42,7 @@ class Characters extends React.Component{
                         color: 'white'
                     }}>
                     {fetchedData.map(character => {
-                        return <p key={character.name}>{character.name} | <span style={{ color: 'gray' }}>{character.gender}</span></p>;
+                        return <p key={character.name}>{character.name} | <span style={{ color: 'gray' }}>Planet: {character.homeworld}</span></p>;
                     })}
 
                     </div>
