@@ -12,7 +12,7 @@ const About = () => {
             <p
             style={{
                 color: '#c0c0c0'
-            }}>This is going to be information about this website.</p>
+            }}>Search for your favorite Star Wars character. You will also find what each planet these characters are from.</p>
         </Layout>
     )
 }
