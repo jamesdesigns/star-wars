@@ -31,7 +31,7 @@ const Planets = () => {
             <p
             style={{
                 color: '#c0c0c0'
-            }}>Posts will show up here later on.</p>
+            }}>Welcome to Star Wars and the planets that inhabit this vast universe.</p>
                 <ol>
                     {data.allMarkdownRemark.edges.map((edge) => {
                         return (
