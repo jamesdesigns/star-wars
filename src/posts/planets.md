@@ -1,5 +1,5 @@
 ---
-title: "The Coldest Planet"
+title: "The Hottest Planet"
 date: "2020-03-26"
 ---
 
