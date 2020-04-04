@@ -37,6 +37,7 @@ class Characters extends React.Component{
                     style={{
                         color: '#c0c0c0'
                     }}>Favorite Characters</p>
+
                     <div 
                     style={{
                         color: 'white'
