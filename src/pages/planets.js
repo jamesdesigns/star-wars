@@ -36,9 +36,16 @@ const Planets = () => {
                     {data.allMarkdownRemark.edges.map((edge) => {
                         return (
                             <li>
-                                <Link to={`/planets/${edge.node.fields.slug}`}>
-                                    <h2 style={{color: '#c0c0c0'}}>{edge.node.frontmatter.title}</h2>
-                                    <p style={{color:'gray'}}>{edge.node.frontmatter.date}</p>
+                                <Link style={{textDecoration: 'none'}} to={`/planets/${edge.node.fields.slug}`}>
+                                    <h2 style={{
+                                        color: '#c0c0c0',
+                                       
+                                        }}>{edge.node.frontmatter.title}</h2>
+                                    <p style={{
+                                        color:'gray',
+                                        marginTop: '-15px',
+                                        marginBottom: '20px'
+                                        }}>{edge.node.frontmatter.date}</p>
                                 </Link>
                             </li>
                         )
