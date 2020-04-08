@@ -1,6 +1,6 @@
 ---
 title: "The Hottest Planet"
-date: "2020-03-26"
+date: "March 26, 2020"
 ---
 
 ![Mustafar](./mustafar-tall.jpg)

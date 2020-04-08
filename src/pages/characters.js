@@ -1,4 +1,5 @@
 import React from "react"
+
 import Layout from "../components/layout"
 
 class Characters extends React.Component{
@@ -19,7 +20,7 @@ class Characters extends React.Component{
             .then(json => {
                 this.setState({
                     fetchedData: json.results,
-                    loading: false
+                    loading: false,
                 })
             })
         };
@@ -37,7 +38,6 @@ class Characters extends React.Component{
                     style={{
                         color: '#c0c0c0'
                     }}>Favorite Characters</p>
-
                     <div 
                     style={{
                         color: 'white'
