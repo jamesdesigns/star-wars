@@ -1,11 +1,13 @@
 ---
-title: "The Planet Hoth"
-date: "2020-03-25"
+date: "March 25, 2020"
+title: "Hoth"
 ---
 
 ![Mustafar](./AT-AT_HOTH.jpeg)
 
-## AT-AT
+## Hoth
 
-The All Terrain Armored Transport, or AT-AT walker, is a four-legged transport and combat vehicle used by the Imperial ground forces. Standing over 20 meters tall with blast-impervious armor plating, these massive constructs are used as much for psychological effect as they are for tactical advantage.
+Don’t be turned off by the bitter chill of Hoth. This is an ideal planet for an adventurous vacation. Put on the warmest clothes you own or just all of your clothes at once, pack food in, and make camp in the remains of Echo Base. From there, it’s all about snowshoeing and looking for pet tauntauns.
+
+Areas to avoid: Wampa caves, the insides of tauntauns
 
