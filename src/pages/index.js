@@ -4,10 +4,11 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+
 const IndexPage = () => (
 
     <Layout>
-      <SEO title="Home" />
+        <SEO title="Home" />
       <div style={{ maxWidth: `500px`, marginBottom: `1.45rem`, marginTop: '175px', margin: '0 auto' }}>
         <Image />
       </div>
