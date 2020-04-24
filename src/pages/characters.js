@@ -1,6 +1,7 @@
 import React from "react"
-
 import Layout from "../components/layout"
+import CharacterList from "../components/characterList"
+
 
 class Characters extends React.Component{
     constructor(props) {
@@ -37,7 +38,7 @@ class Characters extends React.Component{
                     <p
                     style={{
                         color: '#c0c0c0'
-                    }}>Favorite Characters</p>
+                    }}>Characters and the Planets they are from.</p>
                     <div 
                     style={{
                         color: 'white'
@@ -47,6 +48,7 @@ class Characters extends React.Component{
                     })}
 
                     </div>
+          <CharacterList></CharacterList>
                 </Layout>
             )
         }
