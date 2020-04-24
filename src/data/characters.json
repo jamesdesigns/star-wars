@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Luke Skywalker",
+        "planet": "Tatooine"
+    },
+    {
+        "name": "Chewbacca",
+        "planet": "Kashyyyk"
+    },
+    {
+        "name": "Han Solo",
+        "planet": "Corellia"
+    },
+    {
+        "name": "Darth Vader",
+        "planet": "Mustafar"
+    },
+    {
+        "name": "Jabba the Hutt",
+        "planet": "Nal Hutta"
+    },
+    {
+        "name": "C-3PO",
+        "planet": "Tatooine"
+    },
+    {
+        "name": "R2-D2",
+        "planet": "Naboo"
+    },
+    {
+        "name": "Princess Leia",
+        "planet": "Alderaan"
+    },
+    {
+        "name": "Yoda",
+        "planet": "Dagobah"
+    }
+]
