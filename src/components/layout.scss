@@ -253,7 +253,7 @@ h2 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -867,3 +867,23 @@ p#start
 	100% { top: -170%; }
 }
 
+.searchInput {
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: black;
+  color: #A0A0A0;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+@-webkit-keyframes marquee {
+  0% {text-indent:100%;}
+  100% {text-indent:-10%}
+}
+
+input.marquee {
+-webkit-animation: marquee 5s infinite;
+-webkit-animation-timing-function: linear;
+}
