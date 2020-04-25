@@ -44,7 +44,8 @@ const Planets = () => {
                                     <p style={{
                                         color:'gray',
                                         marginTop: '-15px',
-                                        marginBottom: '20px'
+                                        marginBottom: '20px',
+                                        fontSize: '16px'
                                         }}>{edge.node.frontmatter.date}</p>
                                 </Link>
                             </li>

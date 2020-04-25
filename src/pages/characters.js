@@ -38,7 +38,7 @@ class Characters extends React.Component{
                     <p
                     style={{
                         color: '#c0c0c0'
-                    }}>Characters and the Planets they are from.</p>
+                    }}>Characters and what planets they come from.</p>
                     <div 
                     style={{
                         color: 'white'
