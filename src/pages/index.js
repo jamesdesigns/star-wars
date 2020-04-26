@@ -19,9 +19,9 @@ const IndexPage = (props) => (
           color: '#33ccff',
           fontSize: '25px',
           textAlign: 'left'
-          
         }}
-        >A long time ago in a galaxy far,<br />far away....</h1>
+        className="animate"
+        >A long time ago in a galaxy far, far away....</h1>
         <Image />
       </div>
       <div id="titles">

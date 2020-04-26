@@ -24,7 +24,7 @@ const BlogIndex = props => {
       const { date, title } = post.node.frontmatter
       return (
         date.toLowerCase().includes(query.toLowerCase()) ||
-        title.toLowerCase().includes(query.toLowerCase())      )
+        title.toLowerCase().includes(query.toLowerCase()) )
     })
 
     setState({
@@ -42,7 +42,6 @@ const BlogIndex = props => {
       <h1 style={{ textAlign: `left` }}>Planets</h1>
 
       <div className="searchBox">
-        
         <input
           className="searchInput form-control marquee"
           type="text"
@@ -50,7 +49,6 @@ const BlogIndex = props => {
           placeholder="Search Planets..."
           onChange={handleInputChange}
         />
-   
       </div>
 
       {posts.map(({ node }) => {
