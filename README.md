@@ -3,9 +3,8 @@
   Star Wars
 </h1>
 
-This is a simple site that is built with Gatsby. I am saddened to find out that the swapi API is no longer being maintained. As I was building this project out, I was using the swapi api to output data of all the Star Wars characters. Now I am motivated to build my own collection of characters inside a JSON file.
+This is a simple site that is built with Gatsby. I am saddened to find out that the swapi API is no longer being maintained. As I was building this project out, I was using the swapi api to output data of all the Star Wars characters. Now I am motivated to build my own collection of characters inside a JSON file. 
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
