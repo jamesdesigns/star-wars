@@ -30,7 +30,6 @@ const IndexPage = (props) => (
             <p>During the battle, rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
             <p>Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy....</p>
             <p class="center">View the source, Luke!</p>
-            <p>Sorry. Couldn't resist it.</p>
             <p>You're welcome to use this demonstration code in your own sites. Please link back to the original article at:</p>
             <p class="center"><a href="http://www.sitepoint.com/css3-starwars-scrolling-text/">sitepoint.com/<br />css3-starwars-scrolling-text/</a></p>
             <p>and give me a shout on Twitter <a href="https://twitter.com/craigbuckler">@craigbuckler</a> &ndash; I'd love to see how you use and abuse it!</p>
