@@ -1,38 +1,55 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import BackgroundImage from "gatsby-background-image"
+import { graphql } from "gatsby"
 
 
-const IndexPage = () => (
-
+const IndexPage = (props) => (
+  <BackgroundImage
+  className="masthead"
+  fluid={props.data.indexImage.childImageSharp.fluid}
+  >
     <Layout>
         <SEO title="Home" />
       <div style={{ maxWidth: `500px`, marginBottom: `1.45rem`, marginTop: '175px', margin: '0 auto' }}>
+        <h1
+        style={{
+          color: '#33ccff',
+          fontSize: '25px',
+          textAlign: 'left'
+          
+        }}
+        >A long time ago in a galaxy far,<br />far away....</h1>
         <Image />
       </div>
       <div id="titles">
           <div id="titlecontent">
-            <p class="center">EPISODE IV<br />A NEW HOPE FOR CSS3</p>
-            <p>This is a demonstration of Star Wars-style scrolling 3D titles in CSS3. It possibly has no practical purpose whatsoever but it looks great and you can impress your friends.</p>
-            <p>Before movie-buffs start ranting, I realize Star Wars wasn't the first to use crawling 3D titles, but few of you will remember the Flash Gordon series or the 1936 adaption of HG Wells' "Things to Come".</p>
-            <p>Also, by mentioning "Star Wars", everyone will understand what I mean. And I'll receive several thousand more visits.</p>
-            <p>The scrolling titles work well in Chrome, Safari and Firefox. Opera doesn't implement 3D transforms yet, but the text will scroll. IE users receive a blank page. A shame, but IE10 should support it.</p>
-            <p>So how does it work? Well, it's fairly simple. We have an outer absolute DIV (#titles) which is rotated along the X-axis using perspective to give the impression of depth. The same DIV also has an :after psuedo-element which applies a linear gradient so the text appears to fade out.</p>
-            <p>Inside, we have another absolutely-positioned DIV which contains the text (#titlecontent). The top is set to 100% to ensure it starts off-screen then uses CSS3 animation to move it upward over time. No JavaScript is required.</p>
-            <p>You will probably need to adjust the movement amount and timing depending on the quantity of text you want to show. The 3D depth can also be tweaked in the #titles declaration.</p>
-            <p>All the code is contained in this single HTML file&hellip;</p>
+            <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire</p>
+            <p>During the battle, rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
+            <p>Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy....</p>
             <p class="center">View the source, Luke!</p>
-            <p>Sorry. Couldn't resist it.</p>
             <p>You're welcome to use this demonstration code in your own sites. Please link back to the original article at:</p>
             <p class="center"><a href="http://www.sitepoint.com/css3-starwars-scrolling-text/">sitepoint.com/<br />css3-starwars-scrolling-text/</a></p>
             <p>and give me a shout on Twitter <a href="https://twitter.com/craigbuckler">@craigbuckler</a> &ndash; I'd love to see how you use and abuse it!</p>
             <p>Finally, Han shot first and the original, unadulterated movies remain the best. Stop fiddling with them, George!</p>
           </div>
       </div>
-
     </Layout>
+  </BackgroundImage>
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+    query {
+      indexImage: file(relativePath: { eq: "stars-bg.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 4000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }    
+`

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
 
 const BlogIndex = props => {
   const { data } = props
@@ -37,17 +38,19 @@ const BlogIndex = props => {
   const posts = hasSearchResults ? filteredData : allPosts
 
   return (
-    <>
-      <h1 style={{ textAlign: `center` }}>Planets</h1>
+    <Layout>
+      <h1 style={{ textAlign: `left` }}>Planets</h1>
 
       <div className="searchBox">
+        
         <input
-          className="searchInput"
+          className="searchInput form-control marquee"
           type="text"
           aria-label="Search"
           placeholder="Search Planets..."
           onChange={handleInputChange}
         />
+   
       </div>
 
       {posts.map(({ node }) => {
@@ -58,8 +61,10 @@ const BlogIndex = props => {
         return (
           <article key={slug}>
             <header>
-              <h2>
-                <Link to={slug}>{title}</Link>
+              <h2 style={{
+                  color: '#c0c0c0',
+                }}>
+                <Link style={{textDecoration: 'none'}} to={slug}>{title}</Link>
               </h2>
 
               <p>{date}</p>
@@ -75,7 +80,7 @@ const BlogIndex = props => {
           </article>
         )
       })}
-    </>
+    </Layout>
   )
 }
 
