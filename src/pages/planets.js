@@ -22,6 +22,27 @@ const Planets = () => {
     `)
 
 
+    // const handleInputChange = event => {
+    //     console.log(event.target.value)
+        // const query = event.target.value
+        // const { data } = props
+    
+        // const posts = data.allMarkdownRemark.edges || []
+    
+        // const filteredData = posts.filter(post => {
+        //   const { date, title } = post.node.frontmatter
+        //   return (
+        //     date.toLowerCase().includes(query.toLowerCase()) ||
+        //     title.toLowerCase().includes(query.toLowerCase()) )
+        // })
+    
+        // setState({
+        //   query,
+        //   filteredData,
+        // })
+    //   }
+
+
     return (
         <Layout>
             <h1 
