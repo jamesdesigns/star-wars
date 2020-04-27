@@ -37,6 +37,8 @@ const BlogIndex = props => {
   const hasSearchResults = filteredData && query !== emptyQuery
   const posts = hasSearchResults ? filteredData : allPosts
 
+
+
   return (
     <Layout>
       <h1 style={{ textAlign: `left` }}>Planets</h1>

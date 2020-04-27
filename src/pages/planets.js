@@ -28,6 +28,17 @@ const Planets = () => {
             style={{
                 color: 'white'
             }}>Planets</h1>
+        
+            <div className="searchBox">
+                <input
+                className="searchInput form-control marquee"
+                type="text"
+                aria-label="Search"
+                placeholder="Search Planets..."
+                // onChange={handleInputChange}
+                />
+            </div>
+
             <p
             style={{
                 color: '#c0c0c0'
