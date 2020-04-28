@@ -68,7 +68,6 @@ const BlogIndex = props => {
                               }}>{title} </h2>
                 </Link>
                            
-
               <p style={{color: '#808080'}}>{date}</p>
             </header>
             <section>
