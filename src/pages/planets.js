@@ -8,6 +8,8 @@ const Planets = () => {
             allMarkdownRemark {
                 edges {
                     node {
+                        excerpt(pruneLength: 200)
+                        id
                         frontmatter {
                             title
                             date
