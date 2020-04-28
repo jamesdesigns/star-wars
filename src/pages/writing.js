@@ -61,13 +61,15 @@ const BlogIndex = props => {
         return (
           <article key={slug}>
             <header>
-              <h2 style={{
-                  color: '#c0c0c0',
-                }}>
-                <Link style={{textDecoration: 'none'}} to={slug}>{title}</Link>
-              </h2>
 
-              <p>{date}</p>
+                <Link style={{textDecoration: 'none', color: '#c0c0c0'}} to={`/planets/${slug}`}>
+                              <h2 style={{
+                                color: '#c0c0c0',
+                              }}>{title} </h2>
+                </Link>
+                           
+
+              <p style={{color: '#808080'}}>{date}</p>
             </header>
             <section>
               <p
