@@ -38,17 +38,20 @@ class Characters extends React.Component{
                     <p
                     style={{
                         color: '#c0c0c0'
-                    }}>Characters and what planets they come from.</p>
+                    }}>List of characters and the planets they come from:</p>
+                    <CharacterList></CharacterList>
+
                     <div 
                     style={{
-                        color: 'white'
+                        color: 'white',
+                        fontWeight: '200',
+                        lineHeight: '1.5em'
                     }}>
-                    {fetchedData.map(character => {
+                     {fetchedData.map(character => {
                         return <p key={character.name}>{character.name} | <span style={{ color: 'gray' }}>Planet: {character.homeworld}</span></p>;
-                    })}
-
+                    })} 
                     </div>
-          <CharacterList></CharacterList>
+                    
                 </Layout>
             )
         }
