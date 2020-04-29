@@ -48,7 +48,7 @@ const BlogIndex = props => {
           className="searchInput form-control marquee"
           type="text"
           aria-label="Search"
-          placeholder="Search Planets..."
+          placeholder="Search Planet..."
           onChange={handleInputChange}
         />
       </div>

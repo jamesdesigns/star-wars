@@ -33,16 +33,12 @@ const Header = ({ siteTitle }) => (
           className={headerStyles.navItem}
           activeClassName={headerStyles.activeNavItem}
           >Characters</Link></li>
-          <li><Link 
-          to="/planets"
-          className={headerStyles.navItem}
-          activeClassName={headerStyles.activeNavItem}
-         >Planets</Link></li>
+ 
           <li><Link 
           to="/writing"
           className={headerStyles.navItem}
           activeClassName={headerStyles.activeNavItem}
-         >Writing</Link></li>
+         >Planets</Link></li>
           <li><Link 
           to="/about"
           className={headerStyles.navItem}
