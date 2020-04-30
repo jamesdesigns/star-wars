@@ -43,7 +43,7 @@ const BlogIndex = props => {
     <Layout>
       <h1 
       className="animate-header"
-      style={{ textAlign: `left` }}
+      style={{ textAlign: `left`, marginTop: '-30px' }}
       >Planets</h1>
         <p
     style={{

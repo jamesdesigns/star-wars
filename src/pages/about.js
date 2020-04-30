@@ -8,7 +8,8 @@ const About = () => {
             <h1 
             className="animate-header"
             style={{
-                color: 'white'
+                color: 'white',
+                marginTop: '-30px'
             }}>Explore the Galaxy</h1>
             <p
             style={{

@@ -34,7 +34,8 @@ class Characters extends React.Component{
                     <h1 
                     className="animate-header"
                     style={{
-                        color: 'white'
+                        color: 'white',
+                        marginTop: '-30px'
                     }}>Characters</h1>
                     <p
                     style={{
