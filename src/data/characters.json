@@ -34,5 +34,17 @@
     {
         "name": "Yoda",
         "planet": "Dagobah"
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "planet": "Stewjon"
+    },
+    {
+        "name": "Darth Maul",
+        "planet": "Iridonia"
+    },
+    {
+        "name": "Boba Fett",
+        "planet": "Kamino"
     }
 ]
