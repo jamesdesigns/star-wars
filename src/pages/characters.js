@@ -38,10 +38,21 @@ class Characters extends React.Component{
                     }}>Characters</h1>
                     <p
                     style={{
-                        color: '#c0c0c0',
+                        color: '#ffffff',
                         fontWeight: '200',
                         lineHeight: '1.5em'
                     }}>List of characters and the planets they come from:</p>
+                    <p
+                    style={{
+                        color: '#A8A8A8',
+                        fontWeight: '200',
+                        fontSize: '14px',
+                        lineHeight: '1.5em',
+                        marginTop: '-25px'
+                    }}
+                    >(This list is an example of what is to come. A much larger list will have search capability<br /> and links to the characters description.)</p>
+                    
+
                     <CharacterList></CharacterList>
 
                     <div 
