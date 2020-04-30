@@ -3,7 +3,7 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: 'Star Wars',
-    description: 'Clearlinks History with Star Wars and the teams that make up the performance',
+    description: 'The History of Star Wars and the characters and planets that make up this vast galaxy.',
     author: 'James Hooper',
   },
   plugins: [
