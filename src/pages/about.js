@@ -9,7 +9,7 @@ const About = () => {
             className="animate-header"
             style={{
                 color: 'white'
-            }}>Exploring Star Wars Galaxy</h1>
+            }}>Explore the Galaxy</h1>
             <p
             style={{
                 color: '#c0c0c0',
