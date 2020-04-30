@@ -13,18 +13,18 @@ class Characters extends React.Component{
         };
     }
 
-        componentDidMount() {
-            fetch('https://swapi.co/api/people/')
-            .then(response => {
-                return response.json()
-            })
-            .then(json => {
-                this.setState({
-                    fetchedData: json.results,
-                    loading: false,
-                })
-            })
-        };
+        // componentDidMount() {
+        //     fetch('https://swapi.co/api/people/')
+        //     .then(response => {
+        //         return response.json()
+        //     })
+        //     .then(json => {
+        //         this.setState({
+        //             fetchedData: json.results,
+        //             loading: false,
+        //         })
+        //     })
+        // };
 
         render() {
             const { fetchedData } = this.state;
@@ -32,12 +32,15 @@ class Characters extends React.Component{
             return (
                 <Layout>
                     <h1 
+                    className="animate-header"
                     style={{
                         color: 'white'
                     }}>Characters</h1>
                     <p
                     style={{
-                        color: '#c0c0c0'
+                        color: '#c0c0c0',
+                        fontWeight: '200',
+                        lineHeight: '1.5em'
                     }}>List of characters and the planets they come from:</p>
                     <CharacterList></CharacterList>
 

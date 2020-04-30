@@ -41,14 +41,17 @@ const BlogIndex = props => {
 
   return (
     <Layout>
-      <h1 style={{ textAlign: `left` }}>Planets</h1>
+      <h1 
+      className="animate-header"
+      style={{ textAlign: `left` }}
+      >Planets</h1>
 
       <div className="searchBox">
         <input
           className="searchInput form-control marquee"
           type="text"
           aria-label="Search"
-          placeholder="Search Planet..."
+          placeholder="Search a planet..."
           onChange={handleInputChange}
         />
       </div>
@@ -58,14 +61,16 @@ const BlogIndex = props => {
 
         const { slug } = node.fields
         const { title, date } = node.frontmatter
+        
         return (
           <article key={slug}>
             <header>
 
                 <Link style={{textDecoration: 'none', color: '#c0c0c0'}} to={`/planets/${slug}`}>
-                              <h2 style={{
+                              <h2 
+                              style={{
                                 color: '#c0c0c0',
-                              }}>{title} </h2>
+                              }}>{title}</h2>
                 </Link>
                            
               <p style={{color: '#808080'}}>{date}</p>
