@@ -45,6 +45,22 @@ const BlogIndex = props => {
       className="animate-header"
       style={{ textAlign: `left` }}
       >Planets</h1>
+        <p
+    style={{
+        color: '#ffffff',
+        fontWeight: '200',
+        lineHeight: '1.5em',
+    }}
+    >Explore a few planets that reside in the Star Wars galaxy. The following articles describe each planet. You can search by the planets name or by the month the article was written.</p>
+      <p
+        style={{
+            color: '#A8A8A8',
+            fontWeight: '200',
+            fontSize: '14px',
+            lineHeight: '1.5em',
+            marginTop: '-25px'
+        }}
+        >(This list will be expanding extensively and include more images.)</p>
 
       <div className="searchBox">
         <input
@@ -66,7 +82,7 @@ const BlogIndex = props => {
           <article key={slug}>
             <header>
 
-                <Link style={{textDecoration: 'none', color: '#c0c0c0'}} to={`/planets/${slug}`}>
+                <Link style={{color: '#c0c0c0'}} to={`/planets/${slug}`}>
                               <h2 
                               style={{
                                 color: '#c0c0c0',
