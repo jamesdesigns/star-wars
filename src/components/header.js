@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 // import './header.module.scss'
 import headerStyles from './header.module.scss'
+import StarWarsTheme from '../components/starwarsTheme'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -15,7 +16,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 1160,
       }}
     >
       <nav>
@@ -44,6 +45,9 @@ const Header = ({ siteTitle }) => (
           className={headerStyles.navItem}
           activeClassName={headerStyles.activeNavItem}
           >About</Link></li>
+          <li>
+          <StarWarsTheme></StarWarsTheme>
+          </li>
           </ul>
         </nav>
     </div>

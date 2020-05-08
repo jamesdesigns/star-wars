@@ -4,7 +4,6 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
-import { StarWarsTheme } from "../components/starwarsTheme"
 
 
 const IndexPage = (props) => (
@@ -35,7 +34,6 @@ const IndexPage = (props) => (
           </div>
       </div>
     </Layout>
-    <StarWarsTheme></StarWarsTheme>
   </BackgroundImage>
 )
 
