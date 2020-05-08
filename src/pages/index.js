@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
 
-
 const IndexPage = (props) => (
   <BackgroundImage
   className="masthead"
