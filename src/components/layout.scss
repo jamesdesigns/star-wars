@@ -911,3 +911,78 @@ p#start
     transform: scale(0);
   }
 }
+
+// .playBtn {
+//   border: 1px solid #c0c0c0;
+//   border-radius: 15px;
+//   background-color: black;
+//   color: white;
+//   width: 100px;
+// }
+
+// .playBtn:hover {
+//   opacity: 0.5;
+// }
+
+.btn {
+  color: white;
+  margin-top: -9px;
+  cursor: pointer;
+  // display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  // margin: 0 0 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+  outline: none;
+  
+
+  @media(min-width: 600px) {     
+    // margin: 0 1em 2em;
+  }
+  
+  &:hover { text-decoration: none; border: none; }
+  
+}
+
+
+.btn-1 {
+  background: darken(black, 1.5%);
+  // font-weight: 100;
+  color: white;
+  width: 110px;
+  
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+.btn-1:hover {
+  background: rgba(white, 0);
+  // font-weight: 900;
+  // letter-spacing: 1px;
+  border: 0;
+  
+  rect {
+    stroke-width: 4;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 40;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
