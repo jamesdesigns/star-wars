@@ -16,7 +16,7 @@ export class StarWarsTheme extends Component {
 
     // onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-    onClick =()=>{
+    onClick =(e)=>{
         var ChirpChirp = new Audio (StarWars);
         ChirpChirp.play();
     }
