@@ -16,7 +16,7 @@ const About = () => {
                 color: '#c0c0c0',
                 fontWeight: '200',
                 lineHeight: '1.5em'
-            }}>Search your favorite Star Wars characters and explore all the planets that each character resides on. Since the Swapi API is no longer being maintained and apparently has been moved, I will be working on connecting to this new url and add more information about every character that exists and the films that you can find them on. Stay tuned!</p>
+            }}>Search your favorite Star Wars characters and explore all the planets that each character resides on. I will be working on connecting to this newv Swapi API url and add more information about every character that exists and the films that you can find them on. Stay tuned!</p>
         </Layout>
     )
 }
