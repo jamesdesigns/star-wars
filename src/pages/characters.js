@@ -1,11 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 // import CharacterList from "../components/characterList" 
-
-// import BackgroundImage from "../components/darthVader";
-
-
-
+// import HomePage from "../components/darthVader"
+import darthVader from "../images/darth-Vader.jpg"
 
 class Characters extends React.Component{
     constructor(props) {
@@ -34,7 +31,15 @@ class Characters extends React.Component{
             const { fetchedData } = this.state;
 
             return (
+
                 <Layout>
+                    <img style={{
+                    position: 'fixed',
+                    top: '0',
+                    width: '250',
+                    height: '300',
+                    right: '0'
+                }} src={darthVader} alt="Darth Vader" />
                     <h1 
                     className="animate-header"
                     style={{
@@ -58,6 +63,8 @@ class Characters extends React.Component{
                     >(This list is an example of what is to come. A much larger list will have search capability<br /> and links to the characters description.)</p>
 
                     {/* <CharacterList></CharacterList> */}
+
+
                     <div 
                     style={{
                         color: 'white',
@@ -70,12 +77,13 @@ class Characters extends React.Component{
                     </div>
 
                     <div id="docBod"></div>  
-                    <div class="container text-center">
+                    <div className="container text-center">
                         <p>
                         <a href="https://swapi.py4e.com/" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
                         <a href="https://swapi.py4e.com/" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
                         </p>
                     </div>
+                    {/* <HomePage /> */}
                 </Layout>
             )
         }
