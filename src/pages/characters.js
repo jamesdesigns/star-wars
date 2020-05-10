@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 // import CharacterList from "../components/characterList" 
-import darthVader from "../images/darth-Vader.jpg"
+import darthVader from "../images/darth-vader.jpg"
 
 class Characters extends React.Component{
     constructor(props) {
