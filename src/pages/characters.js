@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 // import CharacterList from "../components/characterList" 
-// import HomePage from "../components/darthVader"
 import darthVader from "../images/darth-Vader.jpg"
 
 class Characters extends React.Component{
@@ -64,7 +63,6 @@ class Characters extends React.Component{
 
                     {/* <CharacterList></CharacterList> */}
 
-
                     <div 
                     style={{
                         color: 'white',
@@ -83,7 +81,6 @@ class Characters extends React.Component{
                         <a href="https://swapi.py4e.com/" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
                         </p>
                     </div>
-                    {/* <HomePage /> */}
                 </Layout>
             )
         }
