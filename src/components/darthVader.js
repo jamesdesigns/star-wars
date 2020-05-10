@@ -1,6 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import VaderImg from "gatsby-image"
+import { graphql, StaticQuery } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,10 +13,11 @@ import VaderImg from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const VaderImage = () => {
-  const data = useStaticQuery(graphql`
+const VaderImage = ({className}) => {
+  <StaticQuery
+  query={graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "darth-vader.jpg" }) {
+      desktop: file(relativePath:  { eq: "darth-vader.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
@@ -24,9 +25,29 @@ const VaderImage = () => {
         }
       }
     }
-  `)
-
-  return <VaderImg className="vader" fluid={data.placeholderImage.childImageSharp.fluid} />
+  `}
+  
+  render={data => {
+    // Set ImageData.
+    const imageData = data.desktop.childImageSharp.fluid
+    return (
+      <BackgroundImage
+        Tag="section"
+        className={className}
+        fluid={imageData}
+        backgroundColor={`#040e18`}
+      >
+      </BackgroundImage>
+    )
+  }}
+/>
 }
 
-export default VaderImage
+const StyledBackgroundSection = styled(VaderImage)`
+width: 100%;
+background-position: bottom center;
+background-repeat: repeat-y;
+background-size: cover;
+`
+
+export default StyledBackgroundSection
