@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 // import CharacterList from "../components/characterList" 
 import darthVader from "../images/darth-vader.jpg"
 
+
+window.addEventListener("load", () => console.log("This is ready!!"));
+
 class Characters extends React.Component{
     constructor(props) {
         super(props);
@@ -12,6 +15,19 @@ class Characters extends React.Component{
             fetchedData: []
         };
     }
+
+        // componentDidMount() {
+        //     fetch('https://swapi.py4e.com/api/people/?page=2')
+        //     .then(response => {
+        //         return response.json()
+        //     })
+        //     .then(json => {
+        //         this.setState({
+        //             fetchedData: json.results,
+        //             loading: false,
+        //         })
+        //     })
+        // };
 
         componentDidMount() {
             fetch('https://swapi.py4e.com/api/people/?page=2')
@@ -88,4 +104,5 @@ class Characters extends React.Component{
 
 
 export default Characters 
+
 
