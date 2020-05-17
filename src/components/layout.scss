@@ -901,6 +901,7 @@ p#start
   animation-direction: alternate;
   animation-iteration-count: 1;
   animation-fill-mode: none;
+  z-index: 9999;
 }
 
 @keyframes stretch {
