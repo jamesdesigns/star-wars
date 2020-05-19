@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import darthVader from "../images/darth-vader.jpg"
 
 
-window.addEventListener("load", () => console.log("This is ready!!"));
+window.addEventListener("load", () => console.log("ready"));
 
 class Characters extends React.Component{
     constructor(props) {
@@ -15,22 +15,10 @@ class Characters extends React.Component{
             fetchedData: []
         };
     }
-
-        // componentDidMount() {
-        //     fetch('https://swapi.py4e.com/api/people/?page=2')
-        //     .then(response => {
-        //         return response.json()
-        //     })
-        //     .then(json => {
-        //         this.setState({
-        //             fetchedData: json.results,
-        //             loading: false,
-        //         })
-        //     })
-        // };
+   
 
         componentDidMount() {
-            fetch('https://swapi.py4e.com/api/people/?page=2')
+            fetch('https://swapi.py4e.com/api/people/?page=1')
             .then(response => {
                 return response.json()
             })
@@ -93,8 +81,8 @@ class Characters extends React.Component{
                     <div id="docBod"></div>  
                     <div className="container text-center">
                         <p>
-                        <a href="https://swapi.py4e.com/" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
-                        <a href="https://swapi.py4e.com/" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
+                        <a href="https://swapi.py4e.com/api/people/?page=1" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
+                        <a href="https://swapi.py4e.com/api/people/?page=2" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
                         </p>
                     </div>
                 </Layout>
