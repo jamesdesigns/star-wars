@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import darthVader from "../images/darth-vader.jpg"
 
 
-window.addEventListener("load", () => console.log("ready"));
+// window.addEventListener("load", () => console.log("ready"));
 
 class Characters extends React.Component{
     constructor(props) {
