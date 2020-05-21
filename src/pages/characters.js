@@ -82,7 +82,7 @@ class Characters extends React.Component{
                     <div className="container text-center">
                         <p>
                         <a href="https://swapi.py4e.com/api/people/?page=1" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
-                        <a href="https://swapi.py4e.com/api/people/?page=2" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
+                        <a href="https://swapi.py4e.com/api/people/?page=2&format=json" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
                         </p>
                     </div>
                 </Layout>
