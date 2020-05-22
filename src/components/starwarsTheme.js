@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 
 export class StarWarsTheme extends Component {
-    onClick =(e)=>{
+    onClick =()=>{
         var ChirpChirp = new Audio (StarWars);
         ChirpChirp.play();
     }
