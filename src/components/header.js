@@ -5,6 +5,7 @@ import React from "react"
 import headerStyles from './header.module.scss'
 import StarWarsTheme from '../components/starwarsTheme'
 
+
 const Header = ({ siteTitle }) => (
   <header
     className={headerStyles.header}
