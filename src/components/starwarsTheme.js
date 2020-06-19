@@ -8,10 +8,6 @@ export class StarWarsTheme extends Component {
         ChirpChirp.play();
     }
 
-    // offClick =()=>{
-    //   var ChirpChirp = new Audio (StarWars);
-    //   ChirpChirp.pause();
-    // }
 
     render() {
         return (
