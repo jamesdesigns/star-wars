@@ -1,7 +1,6 @@
 import StarWars from '../audio/StarWars.mp3'
 import React, { Component } from 'react'
 
-
 // export class StarWarsTheme extends Component {
 //     onClick =()=>{
 //         var ChirpChirp = new Audio (StarWars);
@@ -41,7 +40,7 @@ export class StarWarsTheme extends Component {
                     src="https://artistjameshooper.com/StarWars.mp3"/>
                   <source src="https://artistjameshooper.com/StarWars.mp3"></source>
                 </audio> */}
-                               <audio className="audio-element">
+                <audio className="audio-element">
                 <track default kind="captions"
                     srclang="en"
                     src={StarWars}/>
