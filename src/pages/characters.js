@@ -18,6 +18,7 @@ class Characters extends React.Component{
    
 
         componentDidMount() {
+            // const num = 5;
             
             // fetch('https://swapi.py4e.com/api/people/?page=1')
             fetch('https://swapi.py4e.com/api/people/?page=1')
@@ -27,15 +28,13 @@ class Characters extends React.Component{
             .then(json => {
                 this.setState({
                     fetchedData: json.results,
-                    loading: false,
-                    num: 1
+                    loading: false
                 })
             })
         };
 
         render() {
             const { fetchedData } = this.state;
-            const { num } = this.state;
 
             return (
 
