@@ -42,7 +42,7 @@ export const pageQuery = graphql`
     query {
       indexImage: file(relativePath: { eq: "stars-bg.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 4000) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
