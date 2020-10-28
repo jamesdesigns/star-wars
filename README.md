@@ -6,7 +6,7 @@
 This is a simple site that is built with Gatsby. I am saddened to find out that the swapi API is no longer being maintained. As I was building this project out, I was using the swapi api to output data of all the Star Wars characters. Now I am motivated to build my own collection of characters inside a JSON file. 
 
 View my Star Wars Project:
-[Star Wars Website](https://5f8bcf6b83c92a000750a50a--quirky-khorana-900efa.netlify.app/characters)
+[Star Wars Website](https://jovial-goldstine-070ec7.netlify.app/)
 
 
 ## 🚀 Quick start
