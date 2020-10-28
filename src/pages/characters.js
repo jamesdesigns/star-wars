@@ -18,11 +18,10 @@ class Characters extends React.Component{
    
 
         componentDidMount() {
-            // const num = 5;
-            let randomNumber = Math.floor((Math.random() * 81) + 1);
-            
-            // fetch('https://swapi.py4e.com/api/people/?page=1')
-            fetch(`https://swapi.py4e.com/api/people/?page=` + randomNumber)
+            let randomNumber = Math.floor((Math.random() * 9) + 1);
+            let url = `https://swapi.py4e.com/api/people/?page=`;
+
+            fetch(url + randomNumber)
             .then(response => {
                 return response.json()
             })
@@ -81,7 +80,7 @@ class Characters extends React.Component{
                      {fetchedData.map(character => {
                         return <p key={character.name}>{character.name} | <span> <a style={{ color: 'gray', textDecoration: 'none' }} href='{character.homeworld}'>{character.homeworld}</a></span></p>;
                     })} 
-                    </div>
+                    
 
                     <div className="container text-center">
                         <p>
@@ -89,7 +88,9 @@ class Characters extends React.Component{
                         <a href="https://swapi.py4e.com/api/people/?page={next}" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a> */}
                         <a href="https://swapi.py4e.com/api/people/?page=2" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
                         <a href="https://swapi.py4e.com/api/people/?page=3" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
+                        <button onClick={() => window.location.reload(false)}>Next Page</button>
                         </p>
+                    </div>
                     </div>
                 </Layout>
 
@@ -98,5 +99,4 @@ class Characters extends React.Component{
     }
 
 export default Characters 
-
 
