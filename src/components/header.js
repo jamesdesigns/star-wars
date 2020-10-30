@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 // import './header.module.scss'
 import headerStyles from './header.module.scss'
-import StarWarsTheme from '../components/starwarsTheme'
+// import StarWarsTheme from '../components/starwarsTheme'
 
 
 const Header = ({ siteTitle }) => (
@@ -47,7 +47,7 @@ const Header = ({ siteTitle }) => (
           activeClassName={headerStyles.activeNavItem}
           >About</Link></li>
           <li>
-          <StarWarsTheme></StarWarsTheme>
+          {/* <StarWarsTheme></StarWarsTheme> */}
           </li>
           </ul>
         </nav>

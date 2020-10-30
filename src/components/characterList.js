@@ -28,7 +28,8 @@ function getCharacterLabels(data) {
 data.allCharactersJson.edges.forEach(item => characterListArray.push(
 <div 
     style={{
-        color: 'white'
+        color: 'white',
+        zIndex: '9999'
     }}>
     <li key={item.node.name}>{item.node.name} | <span style={{ color: 'gray' }}> {item.node.planet}</span></li>
 </div>)

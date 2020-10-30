@@ -19,6 +19,7 @@ class Characters extends React.Component{
 
         componentDidMount() {
             let randomNumber = Math.floor((Math.random() * 9) + 1);
+
             let url = `https://swapi.py4e.com/api/people/?page=`;
 
             fetch(url + randomNumber)
@@ -36,8 +37,9 @@ class Characters extends React.Component{
         render() {
             const { fetchedData } = this.state;
 
-            return (
 
+
+            return (
                 <Layout>
                     <img style={{
                     position: 'fixed',
@@ -66,7 +68,7 @@ class Characters extends React.Component{
                         lineHeight: '1.5em',
                         marginTop: '-25px'
                     }}
-                    >(This list is an example of what is to come. A much larger list will have search capability<br /> and links to the characters description.)</p>
+                    >(This list contains 87 characters from the swapi API. Each page shows the name, gender, <br />and the planet these characters are from.)</p>
 
                     {/* <CharacterList></CharacterList> */}
 
@@ -75,25 +77,22 @@ class Characters extends React.Component{
                         color: 'white',
                         fontWeight: '200',
                         lineHeight: '1.5em',
-                        zIndex: '9998'
+                        zIndex: '999999'
                     }}>
                      {fetchedData.map(character => {
-                        return <p key={character.name}>{character.name} | <span> <a style={{ color: 'gray', textDecoration: 'none' }} href='{character.homeworld}'>{character.homeworld}</a></span></p>;
+                        return <p style={{ zIndex: '1000'}} key={character.name}>{character.name} | {character.gender} | <span>Planet: <a style={{ color: 'gray', textDecoration: 'none' }} href='{character.homeworld}'>{character.homeworld}</a></span></p>;
                     })} 
                     
 
                     <div className="container text-center">
                         <p>
-                        {/* <a href="https://swapi.py4e.com/api/people/?page={previous}" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
-                        <a href="https://swapi.py4e.com/api/people/?page={next}" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a> */}
-                        <a href="https://swapi.py4e.com/api/people/?page=2" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
-                        <a href="https://swapi.py4e.com/api/people/?page=3" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a>
-                        <button onClick={() => window.location.reload(false)}>Next Page</button>
+                            {/* <a href="https://swapi.py4e.com/api/people/?page=2" id="prev" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px', marginRight: '15px'}} className="btn btn-warning btn-sml" role="button">« Previous</a>
+                            <a href="https://swapi.py4e.com/api/people/?page=3" id="next" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '10px'}} className="btn btn-warning btn-sml" role="button">Continue »</a> */}
+                            <button type="button" style={{ backgroundColor: 'black', border: '1px solid white', borderRadius: '10px', color: 'white', padding: '7.5px', marginRight: '15px'}} className="" role="button" onClick={() => window.location.reload(false)}>Next Page »</button>
                         </p>
                     </div>
                     </div>
                 </Layout>
-
             )
         }
     }
