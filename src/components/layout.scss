@@ -112,6 +112,7 @@ hr {
   height: 0;
   overflow: visible;
 }
+
 button,
 input,
 optgroup,
@@ -893,6 +894,7 @@ p#start
 }
 
 .starwarslogo {
+  margin-top: 150px;
   transform: scale(0);
   animation-name: stretch;
   animation-duration: 10s; 
@@ -926,6 +928,7 @@ p#start
 // }
 
 .btn {
+  // color: white;
   color: white;
   margin-top: -9px;
   cursor: pointer;
@@ -934,7 +937,8 @@ p#start
   font-weight: 400;
   line-height: 45px;
   // margin: 0 0 2em;
-  max-width: 160px; 
+  max-width: 60px; 
+ 
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -954,8 +958,9 @@ p#start
 .btn-1 {
   background: darken(black, 1.5%);
   // font-weight: 100;
-  color: white;
+  color: white; // Color of the border Play Buttons
   width: 110px;
+  margin-right: 8px;
   
   svg {
     height: 45px;
@@ -967,6 +972,7 @@ p#start
   
   rect {
     fill: none;
+    // stroke: white; 
     stroke: white;
     stroke-width: 2;
     stroke-dasharray: 422, 0;
@@ -975,7 +981,9 @@ p#start
 }
 
 .btn-1:hover {
+  // background: rgba(white, 0);
   background: rgba(white, 0);
+
   // font-weight: 900;
   // letter-spacing: 1px;
   border: 0;

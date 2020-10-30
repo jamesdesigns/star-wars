@@ -1,6 +1,7 @@
 import StarWars from '../audio/StarWars.mp3'
 import React, { Component } from 'react'
 
+
 // export class StarWarsTheme extends Component {
 //     onClick =()=>{
 //         var ChirpChirp = new Audio (StarWars);
@@ -19,6 +20,13 @@ export class StarWarsTheme extends Component {
     audioEl.pause()
   }
 
+  stopAudio() {
+    const audioEl = document.getElementsByClassName("audio-element")[0]
+    audioEl.currentTime = 0;
+    audioEl.pause();
+    // audioEl.currentTime = 0;
+  }
+
 
     render() {
         return (
@@ -27,13 +35,19 @@ export class StarWarsTheme extends Component {
                 <svg>
                   <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                 </svg>
-                &#9658; PLAY
+                &#9658; 
                 </button>
                 <button onClick={this.pauseAudio} className="btn btn-1">
                 <svg>
                   <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                 </svg>
-                &#9612;&#9612; PAUSE
+                &nbsp;&#9612;&#9612; 
+                </button>
+                <button onClick={this.stopAudio} className="btn btn-1">
+                <svg>
+                  <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                &#x2B24; 
                 </button>
                 {/* <audio className="audio-element">
                 <track default kind="captions"

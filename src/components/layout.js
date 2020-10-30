@@ -13,6 +13,7 @@ import Header from "./header"
 import "./layout.scss"
 import layoutStyles from './layout.module.scss'
 import "../css/background-image.scss"
+import StarWarsTheme from '../components/starwarsTheme'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -38,6 +39,7 @@ const Layout = ({ children }) => {
           textAlign: 'center',
           color: '#606060'
         }}>
+          <StarWarsTheme></StarWarsTheme><br />
           <small>© {new Date().getFullYear()} Created by {data.site.siteMetadata.author}</small>
           {` `}
         </footer>
